@@ -1,3 +1,6 @@
+* {
+  outline: 0 !important;
+}
 body {
 	margin: 0;
 	font-family: 'Roboto', sans-serif;
@@ -24,6 +27,7 @@ header {
 	margin-top: 21px;
 }
 .header-button {
+	display: inline-block;
 	box-shadow: 10px 17px 34px 6px rgba(18, 61, 145, 0.83);
 	border: none;
 	border-radius: 30px;
@@ -32,6 +36,12 @@ header {
 	font-style: 18px;
 	font-weight: 700;
 	padding: 17px 55px;
+	online: none;
+}
+.header-button:hover {
+	box-shadow: none;
+	transition: 0.5s;
+	cursor: pointer;
 }
 header small {
 	display: block;
@@ -133,6 +143,13 @@ footer{
 	color:#fff;
 	background-color: transparent;
 	padding: 13px 40px;
+}
+.footer-button:hover {
+	color:#3a7dfd;
+	background-color: #fff;
+	transition: 0.5s;
+	cursor: pointer;
+
 }
 
 @media (max-width: 1200px) {
